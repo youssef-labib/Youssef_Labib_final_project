@@ -1,0 +1,100 @@
+#home {
+    .h-left-side {
+        gap: 1rem;
+        h1 {
+            color: $alpha;
+            font-size: 54px;
+            letter-spacing: 0.5px;
+            font-family: "Questrial" , sans-serif;
+            font-weight: 600;
+        }
+        p {
+            font-family: "Roboto" , sans-serif;
+            font-size: 22px;
+            font-weight: lighter;
+            color: $neutral;
+        }
+
+        .h-buttons {
+            gap: 1rem;
+            padding-bottom: 2rem;
+            .h-org-btn {
+                background-color: $beta;
+                border: none;
+                color: white;
+                border-radius: $rounded;
+                width: 10rem;
+                height: 3rem;
+                font-weight: 600;
+            }
+            .h-org-btn:hover {
+                background-color: #eb8951;
+            }
+            .h-tr-btn {
+                background-color: transparent;
+                color: $beta;
+                border: 1px $beta solid;
+                border-radius: $rounded;
+                width: 10rem;
+                height: 3rem;
+                font-weight: 600;
+            }
+            .h-tr-btn:hover {
+                background-color: $beta;
+                border: none;
+                color: white;
+            }
+        }
+
+        .h-stats {
+            gap: 2.5rem;
+            .h-stat {
+                h2 {
+                    font-size: 40px;
+                    font-weight: 650;
+                }
+            }
+        }
+    }
+    .h-right-side {
+        img {
+            width: 37rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        flex-direction: column;
+        .h-left-side {
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .h-buttons {
+                flex-direction: column;
+                align-self: center;
+                .h-org-btn {
+                    width: 25rem;
+                    height: 3.5rem;
+                }
+                .h-tr-btn {
+                    width: 25rem !important;
+                    height: 3.5rem !important;
+                }
+            }
+        }
+        .h-stats {
+            flex-direction: column;
+            align-items: start !important;
+            align-self: center;
+        }
+        .h-right-side {
+            img {
+                width: 24rem;
+            }
+        }
+    }
+}

@@ -3,11 +3,13 @@
 
 $alpha: rgb(15, 41, 67);
 $beta: rgb(232, 117, 50);
+$neutral: rgb(108, 111, 114);
 $s-titles: rgb(111, 75, 59);
 
 $custom-colors: (
     "alpha": $alpha,
     "beta": $beta,
+    "neutral": $neutral,
     "s-titles": $s-titles,
 );
 
@@ -19,9 +21,9 @@ $spacer: 0.5rem;
   $spacers: map-merge($spacers, ($i : $spacer * $i) );
 }
 
-$f-rounded: 20px;
-$f-rectangle: 5px;
-$f-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$rounded: 40px;
+$rectangle: 5px;
+$box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 
 $border: 0.5px solid black;
