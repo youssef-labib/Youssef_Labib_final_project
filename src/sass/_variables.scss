@@ -5,12 +5,14 @@ $alpha: rgb(15, 41, 67);
 $beta: rgb(232, 117, 50);
 $neutral: rgb(108, 111, 114);
 $s-titles: rgb(111, 75, 59);
+$s-bg: rgb(250, 249, 251);
 
 $custom-colors: (
     "alpha": $alpha,
     "beta": $beta,
     "neutral": $neutral,
     "s-titles": $s-titles,
+    "s-bg": $s-bg,
 );
 
 $theme-colors: map-merge($custom-colors , $theme-colors );
@@ -22,7 +24,7 @@ $spacer: 0.5rem;
 }
 
 $rounded: 40px;
-$rectangle: 5px;
+$rectangle: 10px;
 $box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 

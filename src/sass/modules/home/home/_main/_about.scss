@@ -1,0 +1,109 @@
+#about {
+    background-color: $s-bg;
+    .a-top {
+        gap: 0.5rem;
+        h1 {
+            color: $s-titles;
+            font-family: "Questrial" , sans-serif;
+            font-weight: 600;
+        }
+        svg {
+            color: $beta;
+            width: 12rem;
+        }
+        p {
+            width: 40rem;
+            font-family: "Roboto" , sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+    .a-bottom {
+        gap: 5rem;
+        .a-left {
+            img {
+                width: 60rem;
+            }
+        }
+        .a-right {
+            padding-top: 1.5rem;
+            width: 65%;
+            .a-about {
+                gap: 1rem;
+                h6 {
+                    color: $beta;
+                    font-family: "Roboto" , sans-serif;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+                h2 {
+                    color: $alpha;
+                    font-family: "Questrial" , sans-serif;
+                    font-weight: 650;
+                }
+                span {
+                    color: $neutral;
+                }
+                p {
+                    color: $alpha;
+                    font-weight: 600;
+                    padding-block: 1rem;
+                }
+            }
+            .a-contact {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                background-color: white;
+                border-radius: $rectangle;
+                padding: 2rem;
+                box-shadow: $box-shadow;
+                span {
+                    color: $neutral;
+                }
+                p {
+                    color: $alpha;
+                    font-weight: 650;
+                }
+            }
+            .a-signature {
+                gap: 1rem;
+                img {
+                    width: 10rem;
+                }
+                .a-right-sig {
+                    padding-top: 1.5rem;
+                    h5 {
+                        font-weight: lighter;
+                        color: $alpha;
+                        font-family: "Questrial" , sans-serif;
+                    }
+                    p {
+                        color: $neutral;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .a-top {
+        p {
+            width: 90% !important;
+        }
+    }
+    .a-bottom {
+        flex-direction: column;
+    }
+    .a-right {
+        padding-top: 0 !important;
+        width: 95% !important;
+        .a-contact {
+            padding: 1rem !important;
+        }
+        .a-signature {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}

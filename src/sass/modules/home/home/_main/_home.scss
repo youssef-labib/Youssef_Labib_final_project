@@ -1,4 +1,5 @@
 #home {
+    padding-bottom: 5rem;
     .h-left-side {
         gap: 1rem;
         h1 {
@@ -26,6 +27,7 @@
                 width: 10rem;
                 height: 3rem;
                 font-weight: 600;
+                font-family: "Roboto" , sans-serif;
             }
             .h-org-btn:hover {
                 background-color: #eb8951;
@@ -38,6 +40,8 @@
                 width: 10rem;
                 height: 3rem;
                 font-weight: 600;
+                font-family: "Roboto" , sans-serif;
+
             }
             .h-tr-btn:hover {
                 background-color: $beta;
@@ -49,6 +53,7 @@
         .h-stats {
             gap: 2.5rem;
             .h-stat {
+                font-family: "Roboto" , sans-serif;
                 h2 {
                     font-size: 40px;
                     font-weight: 650;
@@ -69,6 +74,7 @@
         .h-left-side {
             h1 {
                 text-align: center;
+                font-size: 40px;
             }
             p {
                 text-align: center;
@@ -77,11 +83,11 @@
                 flex-direction: column;
                 align-self: center;
                 .h-org-btn {
-                    width: 25rem;
-                    height: 3.5rem;
+                    width: 22rem !important;
+                    height: 3.5rem !important;
                 }
                 .h-tr-btn {
-                    width: 25rem !important;
+                    width: 22rem !important;
                     height: 3.5rem !important;
                 }
             }
@@ -93,7 +99,7 @@
         }
         .h-right-side {
             img {
-                width: 24rem;
+                width: 22rem;
             }
         }
     }
