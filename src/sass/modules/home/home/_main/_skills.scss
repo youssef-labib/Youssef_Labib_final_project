@@ -1,0 +1,52 @@
+#skills {
+    gap: 1.5rem;
+    .skills {
+        box-shadow: $box-shadow;
+        background-color: white;
+        padding: 2rem;
+        border-radius: $rectangle;
+        gap: 0.5rem;
+        h5 {
+            color: $alpha;
+            font-weight: 650;
+            font-family: "Questrial" , sans-serif;
+        }
+        p {
+            font-size: 14px;
+            color: $neutral;
+            font-family: "Roboto" , sans-serif;
+        }
+        span {
+            font-weight: 600;
+            align-self: end;
+            font-family: "Roboto" , sans-serif;
+        }
+        .s-progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #f0e0d2;
+            border-radius: 5px;
+            overflow: hidden;
+            .s-progress {
+                height: 100%;
+                background-color: $beta;
+                border-radius: $rectangle;
+            }
+            .s-90 {
+                width: 90%;
+            }
+            .s-80 {
+                width: 80%;
+            }
+            .s-55 {
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #skills {
+        flex-direction: column;
+    }
+}

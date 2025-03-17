@@ -37,10 +37,10 @@
 
         .f-socials {
             a {
-                i {
+                svg {
                     color: $neutral !important;
                 }
-                i:hover {
+                svg:hover {
                     color: $beta !important;
                 }
             }

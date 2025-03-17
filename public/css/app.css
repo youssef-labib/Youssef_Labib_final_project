@@ -30194,6 +30194,7 @@ textarea.form-control-lg {
 }
 * {
   padding: 0;
+  letter-spacing: 1px;
 }
 
 #header {
@@ -30228,10 +30229,10 @@ textarea.form-control-lg {
 #header header nav .orange-hover:hover {
   color: rgb(232, 117, 50) !important;
 }
-#header header .f-socials a i {
+#header header .f-socials a svg {
   color: rgb(108, 111, 114) !important;
 }
-#header header .f-socials a i:hover {
+#header header .f-socials a svg:hover {
   color: rgb(232, 117, 50) !important;
 }
 
@@ -30492,6 +30493,58 @@ label {
     font-size: 13px;
   }
 }
+#skills {
+  gap: 1.5rem;
+}
+#skills .skills {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+}
+#skills .skills h5, #skills .skills .h5 {
+  color: rgb(15, 41, 67);
+  font-weight: 650;
+  font-family: "Questrial", sans-serif;
+}
+#skills .skills p {
+  font-size: 14px;
+  color: rgb(108, 111, 114);
+  font-family: "Roboto", sans-serif;
+}
+#skills .skills span {
+  font-weight: 600;
+  align-self: end;
+  font-family: "Roboto", sans-serif;
+}
+#skills .skills .s-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #f0e0d2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#skills .skills .s-progress-bar .s-progress {
+  height: 100%;
+  background-color: rgb(232, 117, 50);
+  border-radius: 10px;
+}
+#skills .skills .s-progress-bar .s-90 {
+  width: 90%;
+}
+#skills .skills .s-progress-bar .s-80 {
+  width: 80%;
+}
+#skills .skills .s-progress-bar .s-55 {
+  width: 55%;
+}
+
+@media (max-width: 480px) {
+  #skills {
+    flex-direction: column;
+  }
+}
 #header {
   background-color: white;
   height: 6rem;
@@ -30524,10 +30577,10 @@ label {
 #header header nav .orange-hover:hover {
   color: rgb(232, 117, 50) !important;
 }
-#header header .f-socials a i {
+#header header .f-socials a svg {
   color: rgb(108, 111, 114) !important;
 }
-#header header .f-socials a i:hover {
+#header header .f-socials a svg:hover {
   color: rgb(232, 117, 50) !important;
 }
 
