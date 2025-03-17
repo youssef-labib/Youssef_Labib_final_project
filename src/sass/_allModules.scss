@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "Questrial";
+    src: url("../../public/fonts/Questrial-Regular.ttf");
+}
+
+// font-family: "Questrial" , sans-serif;
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../../public/fonts/Roboto_Condensed-Regular.ttf");
+}
+
+// font-family: "Roboto" , sans-serif;
+
+*{
+    padding: 0;
+}
+
+@import "./modules/home/home";
+@import "./modules/portfolio/portfolio";
