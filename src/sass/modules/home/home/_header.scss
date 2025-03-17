@@ -1,0 +1,110 @@
+#header {
+    background-color: white;
+    height: 6rem;
+    padding-top: 1rem;
+
+    header {
+        background-color: white;
+        height: 85%;
+        box-shadow: $f-box-shadow;
+        gap: 14.5rem;
+
+        .f-main-logo {
+            font-size: 26px;
+            text-decoration: none;
+            color: $alpha;
+            font-family: "Questrial", sans-serif;
+        }
+
+        nav {
+            .orange-hover {
+                text-decoration: none;
+                color: $alpha;
+                font-size: 17px;
+                font-family: "Noto", sans-serif;
+                letter-spacing: 0.5px;
+            }
+
+            .orange-hover:hover {
+                color: $beta !important;
+            }
+        }
+
+        .f-socials {
+            a {
+                i {
+                    color: #6c6f72 !important;
+                }
+                i:hover {
+                    color: $beta !important;
+                }
+            }
+        }
+    }
+}
+
+// for responsive .
+#menu,
+label {
+    display: none;
+}
+
+.f-close,
+.f-open {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    #header {
+        header {
+            padding-block: 0;
+            gap: 0.5rem;
+            justify-content: space-between !important;
+
+            nav {
+                background-color: white;
+                position: fixed;
+                width: 90%;
+                right: -200%;
+                top: 3%;
+                transition: 0.5s;
+                flex-direction: column;
+                justify-content: start !important;
+                align-items: start !important;
+                gap: 1rem !important;
+                padding: 5vw !important;
+                z-index: 66666 !important;
+
+                label,
+                .f-close {
+                    display: block;
+                }
+
+                .f-close {
+                    align-self: end;
+                }
+            }
+            .f-open {
+                display: block !important;
+            }
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu:checked~.f-open {
+            display: none;
+        }
+
+        #menu:checked~nav {
+            right: 5%;
+        }
+
+        #menu:checked~.f-close {
+            display: block;
+        }
+    }
+}
+
