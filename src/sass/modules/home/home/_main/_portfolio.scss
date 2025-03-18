@@ -57,7 +57,7 @@
             div {
                 display: none;
 
-                .item {
+                .p-item {
                     display: flex;
                     align-items: left;
                     justify-content: center;
@@ -101,8 +101,8 @@
             }
 
             .p-all-items {
-                display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
             }
         }
@@ -114,4 +114,34 @@
 #sidebar:has(button[data-filter="motion"]:focus) ~ .portfolio-container #all-items .item:not(.motion),
 #sidebar:has(button[data-filter="branding"]:focus) ~ .portfolio-container #all-items .item:not(.branding) {
     display: none;
+}
+
+@media (max-width: 480px) {
+    .p-top {
+        p {
+            width: 90% !important;
+        }
+    }
+    .p-bottom {
+        .portfolio-container {
+            .p-all-items {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                flex-direction: column !important;
+                .p-item {
+                    img {
+                        width: 30rem !important;
+                    }
+                    .p-card-text {
+                        padding: 1rem;
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -30597,7 +30597,7 @@ label {
 #portfolio .p-bottom .portfolio-container div {
   display: none;
 }
-#portfolio .p-bottom .portfolio-container div .item {
+#portfolio .p-bottom .portfolio-container div .p-item {
   display: flex;
   align-items: left;
   justify-content: center;
@@ -30606,36 +30606,36 @@ label {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: 0.3s;
 }
-#portfolio .p-bottom .portfolio-container div .item img {
+#portfolio .p-bottom .portfolio-container div .p-item img {
   width: 40rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#portfolio .p-bottom .portfolio-container div .item .p-card-text {
+#portfolio .p-bottom .portfolio-container div .p-item .p-card-text {
   display: flex;
   align-items: left;
   justify-content: center;
   flex-direction: column;
   padding: 1.5rem;
 }
-#portfolio .p-bottom .portfolio-container div .item .p-card-text h6, #portfolio .p-bottom .portfolio-container div .item .p-card-text .h6 {
+#portfolio .p-bottom .portfolio-container div .p-item .p-card-text h6, #portfolio .p-bottom .portfolio-container div .p-item .p-card-text .h6 {
   color: rgb(232, 117, 50);
   font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
-#portfolio .p-bottom .portfolio-container div .item .p-card-text h4, #portfolio .p-bottom .portfolio-container div .item .p-card-text .h4 {
+#portfolio .p-bottom .portfolio-container div .p-item .p-card-text h4, #portfolio .p-bottom .portfolio-container div .p-item .p-card-text .h4 {
   color: rgb(15, 41, 67);
   font-family: "Questrial", sans-serif;
   font-weight: 600;
 }
-#portfolio .p-bottom .portfolio-container div .item .p-card-text p {
+#portfolio .p-bottom .portfolio-container div .p-item .p-card-text p {
   font-size: 14px;
   color: rgb(108, 111, 114);
   font-family: "Roboto", sans-serif;
 }
 #portfolio .p-bottom .portfolio-container .p-all-items {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -30646,6 +30646,26 @@ label {
   display: none;
 }
 
+@media (max-width: 480px) {
+  .p-top p {
+    width: 90% !important;
+  }
+  .p-bottom .portfolio-container .p-all-items {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .p-bottom .portfolio-container .p-all-items .p-item img {
+    width: 30rem !important;
+  }
+  .p-bottom .portfolio-container .p-all-items .p-item .p-card-text {
+    padding: 1rem;
+  }
+  .p-bottom .portfolio-container .p-all-items .p-item .p-card-text p {
+    font-size: 12px;
+  }
+}
 #testimonials {
   background-color: rgb(250, 249, 251);
 }
