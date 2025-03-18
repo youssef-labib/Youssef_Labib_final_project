@@ -29,7 +29,7 @@
                     </svg>
                 </label>
 
-                <a class="text-alpha orange-hover" href="#">Home</a>
+                <a class="text-alpha orange-hover h-active" href="#">Home</a>
                 <a class="text-alpha orange-hover" href="#">About</a>
                 <a class="text-alpha orange-hover" href="#">Resume</a>
                 <a class="text-alpha orange-hover" href="#">Portfolio</a>
@@ -213,23 +213,369 @@
     </section>
 
     <!-- portfolio section -->
-    <section id="portfolio">
-        
+    <section id="portfolio" class="pb-8">
+        <div class="container p-top d-flex align-items-center justify-content-center flex-column text-center py-8">
+            <h1>Portfolio</h1>
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                    stroke-width="2"></path>
+            </svg>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div>
+
+        <div class="p-bottom">
+            <div class="portfolio-menu d-flex align-items-center justify-content-center">
+                <a href="#all" class="p-hover p-active">All Work</a>
+                <a href="#web" class="p-hover">Web Design</a>
+                <a href="#graphics" class="p-hover">Graphics</a>
+                <a href="#motion" class="p-hover">Motion</a>
+                <a href="#branding" class="p-hover">Branding</a>
+            </div>
+
+            <div id="all"></div>
+            <div id="web"></div>
+            <div id="graphics"></div>
+            <div id="motion"></div>
+            <div id="branding"></div>
+
+            <div class="portfolio-container">
+                <!-- All Items -->
+                <div id="all-items" class="p-all-items">
+                    <div class="item web">
+                        <img src="./public/images/portfolio/portfolio-1.webp" alt="portfolio-1">
+                        <div class="p-card-text">
+                            <h6>WEB DESIGN</h6>
+                            <h4>Modern Dashboard Interface</h4>
+                            <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+                        </div>
+                    </div>
+                    <div class="item graphics">
+                        <img src="./public/images/portfolio/portfolio-10.webp" alt="portfolio-10">
+                        <div class="p-card-text">
+                            <h6>GRAPHICS</h6>
+                            <h4>Creative Brand Identity</h4>
+                            <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                        </div>
+                    </div>
+                    <div class="item motion">
+                        <img src="./public/images/portfolio/portfolio-7.webp" alt="portfolio-7">
+                        <div class="p-card-text">
+                            <h6>MOTION</h6>
+                            <h4>Product Animation Reel</h4>
+                            <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
+                        </div>
+                    </div>
+                    <div class="item branding">
+                        <img src="./public/images/portfolio/portfolio-4.webp" alt="portfolio-4">
+                        <div class="p-card-text">
+                            <h6>BRANDING</h6>
+                            <h4>Luxury Brand Package</h4>
+                            <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
+                        </div>
+                    </div>
+                    <div class="item web">
+                        <img src="./public/images/portfolio/portfolio-2.webp" alt="portfolio-2">
+                        <div class="p-card-text">
+                            <h6>WEB DESIGN</h6>
+                            <h4>E-commerce Platform</h4>
+                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    <div class="item graphics">
+                        <img src="./public/images/portfolio/portfolio-11.webp" alt="portfolio-11">
+                        <div class="p-card-text">
+                            <h6>GRAPHICS</h6>
+                            <h4>Digital Art Collection</h4>
+                            <p>Cras mattis consectetur purus sit amet fermentum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Design -->
+                <!-- <div id="web-items">
+                    <div class="item web">Web Design 1</div>
+                    <div class="item web">Web Design 2</div>
+                </div> -->
+
+                <!-- Graphics -->
+                <!-- <div id="graphics-items">
+                    <div class="item graphics">Graphics 1</div>
+                    <div class="item graphics">Graphics 2</div>
+                </div> -->
+
+                <!-- Motion -->
+                <!-- <div id="motion-items">
+                    <div class="item motion">Motion</div>
+                </div> -->
+
+                <!-- Branding -->
+                <!-- <div id="branding-items">
+                    <div class="item branding">Branding</div>
+                </div> -->
+            </div>
+        </div>
     </section>
 
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="pb-10">
+        <div class="container t-top d-flex align-items-center justify-content-center flex-column text-center py-8">
+            <h1>Testimonials</h1>
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                    stroke-width="2"></path>
+            </svg>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div>
+        <div id="carouselExampleAutoplaying"
+            class="carousel slide t-bottom d-flex align-items-center justify-content-center" data-bs-ride="carousel">
+            <div class="container carousel-inner">
+                <div class="carousel-item active t-bg d-flex align-items-start justify-content-center">
+                    <div class="c-left d-flex align-items-start justify-content-start flex-column">
 
+                        <h2>Impedit dolor facilis nulla</h2>
+
+                        <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                            minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+
+                        <p>Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio
+                            aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum
+                            deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est
+                            voluptatibus architecto laborum.</p>
+
+                        <div class="c-profile d-flex align-items-center justify-content-left">
+                            <img src="./public/images/person/person-f-10.webp" alt="female-pic">
+                            <div class="c-profile-text">
+                                <h6>Jena Karlis</h6>
+                                <span>Store Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-right">
+                        <img src="./public/images/person/person-f-10.webp" alt="female-pic">
+                    </div>
+                </div>
+
+                <div class="carousel-item t-bg d-flex align-items-start justify-content-center">
+                    <div class="c-left d-flex align-items-start justify-content-start flex-column">
+                        <h2>Sed ut perspiciatis unde omnis</h2>
+
+                        <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                            Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        </p>
+
+                        <p>Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia
+                            sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis
+                            minus consequatur. Enim ut eos quo.</p>
+
+                        <div class="c-profile d-flex align-items-center justify-content-left">
+                            <img src="./public/images/person/person-m-7.webp" alt="male-pic">
+                            <div class="c-profile-text">
+                                <h6>Saul Goodman</h6>
+                                <span>Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-right">
+                        <img src="./public/images/person/person-m-7.webp" alt="male-pic">
+                    </div>
+                </div>
+
+                <div class="carousel-item t-bg d-flex align-items-start justify-content-center">
+                    <div class="c-left d-flex align-items-start justify-content-start flex-column">
+
+                        <h2>Nemo enim ipsam voluptatem</h2>
+
+                        <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                            eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
+                            culpa.</p>
+
+                        <p>Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a
+                            repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure
+                            dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam
+                            aspernatur odit ut vitae.</p>
+
+                        <div class="c-profile d-flex align-items-center justify-content-left">
+                            <img src="./public/images/person/person-f-8.webp" alt="female-pic">
+                            <div class="c-profile-text">
+                                <h6>Sara Wilsson</h6>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-right">
+                        <img src="./public/images/person/person-f-8.webp" alt="female-pic">
+                    </div>
+                </div>
+
+                <div class="carousel-item t-bg d-flex align-items-start justify-content-center">
+                    <div class="c-left d-flex align-items-start justify-content-start flex-column">
+                        <h2>Labore nostrum eos impedit</h2>
+
+                        <p>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                            veniam.</p>
+
+                        <p>Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia
+                            illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic
+                            nostrum suscipit corrupti nam expedita adipisci aut optio.</p>
+
+                        <div class="c-profile d-flex align-items-center justify-content-left">
+                            <img src="./public/images/person/person-m-9.webp" alt="male-pic">
+                            <div class="c-profile-text">
+                                <h6>Matt Brandon</h6>
+                                <span>Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-right">
+                        <img src="./public/images/person/person-m-9.webp" alt="male-pic">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <!-- services -->
     <section id="services">
-
+        <div class="container s-top d-flex align-items-center justify-content-center flex-column text-center py-10">
+            <h1>Services</h1>
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                    stroke-width="2"></path>
+            </svg>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div>
     </section>
 
     <!-- questions section -->
-    <section id="questions">
-
+    <section id="questions" class="container">
+        <div class="container q-top d-flex align-items-center justify-content-center flex-column text-center py-10">
+            <h1>Frequently Asked Questions</h1>
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                    stroke-width="2"></path>
+            </svg>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div>
+        <div class="q-bottom d-flex flex-column">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header border-0">
+                        <button class="accordion-button q-summary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Non consectetur a erat nam at lectus urna duis?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body q-details">
+                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
+                                non.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed q-summary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Feugiat scelerisque varius morbi enim nunc faucibus?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body q-details">
+                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
+                                laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed q-summary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Dolor sit amet consectetur adipiscing elit pellentesque?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body q-details">
+                            <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at elementum eu facilisis sed odio morbi quis</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button q-summary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsefoor" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapsefoor">
+                            Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapsefoor" class="accordion-collapse collapse show">
+                        <div class="accordion-body q-details">
+                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit
+                                laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed q-summary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapsefive">
+                            Tempus quam pellentesque nec nam aliquam sem et tortor?</button>
+                    </h3>
+                    <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+                        <div class="accordion-body q-details">
+                            <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
+                                ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
+                                adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed q-summary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsesixe" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapsesixe">
+                            Perspiciatis quod quo quos nulla quo illum ullam?</button>
+                    </h3>
+                    <div id="panelsStayOpen-collapsesixe" class="accordion-collapse collapse">
+                        <div class="accordion-body q-details">
+                            <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in
+                                suscipit sequi. Distinctio ipsam dolore et.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- contact section -->
@@ -241,6 +587,8 @@
     <footer>
 
     </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>
 

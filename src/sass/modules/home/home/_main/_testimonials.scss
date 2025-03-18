@@ -1,0 +1,69 @@
+#testimonials {
+    background-color: $s-bg;
+    .t-top {
+        gap: 0.5rem;
+        h1 {
+            color: $s-titles;
+            font-family: "Questrial" , sans-serif;
+            font-weight: 600;
+        }
+        svg {
+            color: $beta;
+            width: 12rem;
+        }
+        p {
+            width: 40rem;
+            font-family: "Roboto" , sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+
+    .t-bottom {
+        div {
+            .t-bg {
+                background-color: white;
+                box-shadow: $box-shadow;
+                padding: 3rem;
+                border-radius: $rectangle;
+                gap: 1rem;
+
+                .c-left {
+                    gap: 1rem;
+                    h2 {
+                        font-family: "Questrial" , sans-serif;
+                        color: $alpha;
+                        font-weight: 650;
+                    }
+                    p {
+                        font-style: italic;
+                        font-family: "Roboto" , sans-serif;
+                    }
+                    .c-profile {
+                        gap: 1rem;
+                        img {
+                            width: 4rem;
+                            border-radius: $rounded;
+                        }
+                    }
+                    .c-profile-text {
+                        h6 {
+                            font-weight: 650;
+                            font-family: "Questrial" , sans-serif;
+                        }
+                        span {
+                            font-size: 14px;
+                            letter-spacing: 0;
+                            font-family: "Roboto" , sans-serif;
+                        }
+                    }
+                }
+                .c-right {
+                    img {
+                        width: 25rem;
+                        border-radius: $rectangle;
+                    }
+                }
+            }
+        }
+    }
+}

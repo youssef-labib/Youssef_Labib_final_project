@@ -1,0 +1,19 @@
+#services {
+    .s-top {
+        gap: 0.5rem;
+        h1 {
+            color: $s-titles;
+            font-family: "Questrial" , sans-serif;
+            font-weight: 600;
+        }
+        svg {
+            color: $beta;
+            width: 12rem;
+        }
+        p {
+            width: 40rem;
+            font-family: "Roboto" , sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+}

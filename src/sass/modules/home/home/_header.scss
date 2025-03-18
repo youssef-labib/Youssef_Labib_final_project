@@ -7,6 +7,7 @@
     left: 50%;
     transform: translate(-50%);
     width: 100%;
+    z-index: 999999999;
 
     header {
         background-color: white;
@@ -31,6 +32,10 @@
             }
 
             .orange-hover:hover {
+                color: $beta !important;
+            }
+
+            .h-active {
                 color: $beta !important;
             }
         }

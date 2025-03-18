@@ -1,0 +1,117 @@
+#portfolio {
+    .p-top {
+        gap: 0.5rem;
+
+        h1 {
+            color: $s-titles;
+            font-family: "Questrial", sans-serif;
+            font-weight: 600;
+        }
+
+        svg {
+            color: $beta;
+            width: 12rem;
+        }
+
+        p {
+            width: 40rem;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+
+    .p-bottom {
+        .portfolio-menu {
+            gap: 0.5rem;
+
+            .p-hover {
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                background-color: transparent;
+                border-radius: $rounded;
+                color: $alpha;
+                transition: 0.3s;
+                font-family: "Roboto" , sans-serif;
+            }
+
+            .p-hover:hover {
+                background-color: #fcebe0;
+                color: $beta;
+            }
+
+            .p-active {
+                color: $alpha;
+                background-color: $beta;
+            }
+
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            div {
+                display: none;
+
+                .item {
+                    display: flex;
+                    align-items: left;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-radius: $rectangle;
+                    box-shadow: $box-shadow;
+                    transition: 0.3s;
+
+                    img {
+                        width: 40rem;
+                        border-top-left-radius: $rectangle;
+                        border-top-right-radius: $rectangle;
+                    }
+
+                    .p-card-text {
+                        display: flex;
+                        align-items: left;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 1.5rem;
+                        h6 {
+                            color: $beta;
+                            font-family: "Roboto" , sans-serif;
+                            font-weight: 600;
+                        }
+                        h4 {
+                            color: $alpha;
+                            font-family: "Questrial" , sans-serif;
+                            font-weight: 600;
+                        }
+                        p {
+                            font-size: 14px;
+                            color: $neutral;
+                            font-family: "Roboto" , sans-serif;
+                        }
+                    }
+                }
+            }
+
+            .p-all-items {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 2rem;
+            }
+        }
+
+        // #all:target~.portfolio-container #all-items,
+        // #web:target~.portfolio-container #web-items,
+        // #graphics:target~.portfolio-container #graphics-items,
+        // #motion:target~.portfolio-container #motion-items,
+        // #branding:target~.portfolio-container #branding-items {
+        //     display: flex;
+        // }
+    }
+}
+
+
+
+

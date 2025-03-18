@@ -30206,6 +30206,7 @@ textarea.form-control-lg {
   left: 50%;
   transform: translate(-50%);
   width: 100%;
+  z-index: 999999999;
 }
 #header header {
   background-color: white;
@@ -30227,6 +30228,9 @@ textarea.form-control-lg {
   letter-spacing: 0.5px;
 }
 #header header nav .orange-hover:hover {
+  color: rgb(232, 117, 50) !important;
+}
+#header header nav .h-active {
   color: rgb(232, 117, 50) !important;
 }
 #header header .f-socials a svg {
@@ -30545,101 +30549,203 @@ label {
     flex-direction: column;
   }
 }
-#header {
-  background-color: white;
-  height: 6rem;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
+#portfolio .p-top {
+  gap: 0.5rem;
 }
-#header header {
-  background-color: white;
-  height: 85%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  gap: 14.5rem;
+#portfolio .p-top h1, #portfolio .p-top .h1 {
+  color: rgb(111, 75, 59);
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
 }
-#header header .f-main-logo {
-  font-size: 26px;
+#portfolio .p-top svg {
+  color: rgb(232, 117, 50);
+  width: 12rem;
+}
+#portfolio .p-top p {
+  width: 40rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+#portfolio .p-bottom .portfolio-menu {
+  gap: 0.5rem;
+}
+#portfolio .p-bottom .portfolio-menu .p-hover {
   text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 40px;
+  color: rgb(15, 41, 67);
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+#portfolio .p-bottom .portfolio-menu .p-hover:hover {
+  background-color: #fcebe0;
+  color: rgb(232, 117, 50);
+}
+#portfolio .p-bottom .portfolio-menu .p-active {
+  color: rgb(15, 41, 67);
+  background-color: rgb(232, 117, 50);
+}
+#portfolio .p-bottom .portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+#portfolio .p-bottom .portfolio-container div {
+  display: none;
+}
+#portfolio .p-bottom .portfolio-container div .item {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s;
+}
+#portfolio .p-bottom .portfolio-container div .item img {
+  width: 40rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#portfolio .p-bottom .portfolio-container div .item .p-card-text {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+#portfolio .p-bottom .portfolio-container div .item .p-card-text h6, #portfolio .p-bottom .portfolio-container div .item .p-card-text .h6 {
+  color: rgb(232, 117, 50);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#portfolio .p-bottom .portfolio-container div .item .p-card-text h4, #portfolio .p-bottom .portfolio-container div .item .p-card-text .h4 {
   color: rgb(15, 41, 67);
   font-family: "Questrial", sans-serif;
+  font-weight: 600;
 }
-#header header nav .orange-hover {
-  text-decoration: none;
+#portfolio .p-bottom .portfolio-container div .item .p-card-text p {
+  font-size: 14px;
+  color: rgb(108, 111, 114);
+  font-family: "Roboto", sans-serif;
+}
+#portfolio .p-bottom .portfolio-container .p-all-items {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 2rem;
+}
+
+#testimonials {
+  background-color: rgb(250, 249, 251);
+}
+#testimonials .t-top {
+  gap: 0.5rem;
+}
+#testimonials .t-top h1, #testimonials .t-top .h1 {
+  color: rgb(111, 75, 59);
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
+}
+#testimonials .t-top svg {
+  color: rgb(232, 117, 50);
+  width: 12rem;
+}
+#testimonials .t-top p {
+  width: 40rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+#testimonials .t-bottom div .t-bg {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 3rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+#testimonials .t-bottom div .t-bg .c-left {
+  gap: 1rem;
+}
+#testimonials .t-bottom div .t-bg .c-left h2, #testimonials .t-bottom div .t-bg .c-left .h2 {
+  font-family: "Questrial", sans-serif;
   color: rgb(15, 41, 67);
-  font-size: 17px;
-  font-family: "Noto", sans-serif;
-  letter-spacing: 0.5px;
+  font-weight: 650;
 }
-#header header nav .orange-hover:hover {
-  color: rgb(232, 117, 50) !important;
+#testimonials .t-bottom div .t-bg .c-left p {
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
 }
-#header header .f-socials a svg {
-  color: rgb(108, 111, 114) !important;
+#testimonials .t-bottom div .t-bg .c-left .c-profile {
+  gap: 1rem;
 }
-#header header .f-socials a svg:hover {
-  color: rgb(232, 117, 50) !important;
+#testimonials .t-bottom div .t-bg .c-left .c-profile img {
+  width: 4rem;
+  border-radius: 40px;
+}
+#testimonials .t-bottom div .t-bg .c-left .c-profile-text h6, #testimonials .t-bottom div .t-bg .c-left .c-profile-text .h6 {
+  font-weight: 650;
+  font-family: "Questrial", sans-serif;
+}
+#testimonials .t-bottom div .t-bg .c-left .c-profile-text span {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: "Roboto", sans-serif;
+}
+#testimonials .t-bottom div .t-bg .c-right img {
+  width: 25rem;
+  border-radius: 10px;
 }
 
-#menu,
-label {
-  display: none;
+#services .s-top {
+  gap: 0.5rem;
+}
+#services .s-top h1, #services .s-top .h1 {
+  color: rgb(111, 75, 59);
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
+}
+#services .s-top svg {
+  color: rgb(232, 117, 50);
+  width: 12rem;
+}
+#services .s-top p {
+  width: 40rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
 }
 
-.f-close,
-.f-open {
-  display: none;
+#questions .q-top {
+  gap: 0.5rem;
 }
-
-@media (max-width: 480px) {
-  #header {
-    padding-inline: 0.5rem;
-  }
-  #header header {
-    padding-block: 0;
-    gap: 0.5rem;
-    justify-content: space-between !important;
-    height: 70%;
-  }
-  #header header nav {
-    background-color: white;
-    position: fixed;
-    width: 90%;
-    right: -200%;
-    top: 3%;
-    transition: 0.5s;
-    flex-direction: column;
-    justify-content: start !important;
-    align-items: start !important;
-    gap: 1rem !important;
-    padding: 5vw !important;
-    z-index: 66666 !important;
-  }
-  #header header nav label,
-  #header header nav .f-close {
-    display: block;
-  }
-  #header header nav .f-close {
-    align-self: end;
-  }
-  #header header .f-open {
-    display: block !important;
-  }
-  #header #menu {
-    display: none;
-  }
-  #header #menu:checked ~ .f-open {
-    display: none;
-  }
-  #header #menu:checked ~ nav {
-    right: 5%;
-  }
-  #header #menu:checked ~ .f-close {
-    display: block;
-  }
+#questions .q-top h1, #questions .q-top .h1 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
+  background: -webkit-linear-gradient(60deg, rgb(81, 65, 62), rgb(166, 94, 55) 72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#questions .q-top svg {
+  color: rgb(232, 117, 50);
+  width: 12rem;
+}
+#questions .q-top p {
+  width: 40rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+#questions .q-bottom {
+  gap: 1rem;
+}
+#questions .q-bottom div h3 .q-summary, #questions .q-bottom div .h3 .q-summary {
+  background-color: white;
+  border: 0.5px solid rgba(135, 135, 135, 0);
+  border-radius: 5px !important;
+  font-weight: 600;
+}
+#questions .q-bottom div div .q-details {
+  background-color: #fefbf8;
 }
 
 /*# sourceMappingURL=app.css.map */
