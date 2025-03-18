@@ -30197,6 +30197,28 @@ textarea.form-control-lg {
   letter-spacing: 1px;
 }
 
+#btt {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  max-width: 3rem;
+  border: none;
+  font-size: 26px;
+  padding: 0.3rem;
+  border-radius: 50%;
+  position: fixed;
+  background-color: rgb(232, 117, 50);
+  width: 100%;
+  transition: all 0.4s;
+}
+#btt i {
+  color: white;
+}
+
+#btt:hover {
+  opacity: 60%;
+}
+
 #header {
   background-color: white;
   height: 6rem;
@@ -30213,6 +30235,7 @@ textarea.form-control-lg {
   height: 85%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   gap: 14.5rem;
+  width: 100% !important;
 }
 #header header .f-main-logo {
   font-size: 26px;
@@ -30230,7 +30253,7 @@ textarea.form-control-lg {
 #header header nav .orange-hover:hover {
   color: rgb(232, 117, 50) !important;
 }
-#header header nav .h-active {
+#header header nav .orange-hover:focus {
   color: rgb(232, 117, 50) !important;
 }
 #header header .f-socials a svg {
@@ -30595,7 +30618,7 @@ label {
   margin-top: 20px;
 }
 #portfolio .p-bottom .portfolio-container div {
-  display: none;
+  display: block;
 }
 #portfolio .p-bottom .portfolio-container div .p-item {
   display: flex;
@@ -30639,16 +30662,22 @@ label {
   gap: 2rem;
 }
 
-#sidebar:has(button[data-filter=web]:focus) ~ .portfolio-container #all-items .item:not(.web),
-#sidebar:has(button[data-filter=graphics]:focus) ~ .portfolio-container #all-items .item:not(.graphics),
-#sidebar:has(button[data-filter=motion]:focus) ~ .portfolio-container #all-items .item:not(.motion),
-#sidebar:has(button[data-filter=branding]:focus) ~ .portfolio-container #all-items .item:not(.branding) {
+#sidebar:has(button[data-filter=web]:focus) ~ .portfolio-container #all-items .p-item:not(.web),
+#sidebar:has(button[data-filter=graphics]:focus) ~ .portfolio-container #all-items .p-item:not(.graphics),
+#sidebar:has(button[data-filter=motion]:focus) ~ .portfolio-container #all-items .p-item:not(.motion),
+#sidebar:has(button[data-filter=branding]:focus) ~ .portfolio-container #all-items .p-item:not(.branding) {
   display: none;
 }
 
 @media (max-width: 480px) {
   .p-top p {
     width: 90% !important;
+  }
+  .p-bottom .portfolio-menu {
+    flex-direction: column !important;
+  }
+  .p-bottom .portfolio-container {
+    padding: 0 1rem;
   }
   .p-bottom .portfolio-container .p-all-items {
     display: flex !important;
@@ -30657,7 +30686,7 @@ label {
     flex-direction: column !important;
   }
   .p-bottom .portfolio-container .p-all-items .p-item img {
-    width: 30rem !important;
+    width: 100% !important;
   }
   .p-bottom .portfolio-container .p-all-items .p-item .p-card-text {
     padding: 1rem;
@@ -30686,46 +30715,74 @@ label {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
 }
-#testimonials .t-bottom div .t-bg {
+#testimonials .t-bottom {
+  position: relative;
+}
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg {
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 3rem;
   border-radius: 10px;
   gap: 1rem;
 }
-#testimonials .t-bottom div .t-bg .c-left {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left {
   gap: 1rem;
 }
-#testimonials .t-bottom div .t-bg .c-left h2, #testimonials .t-bottom div .t-bg .c-left .h2 {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left h2, #testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left .h2 {
   font-family: "Questrial", sans-serif;
   color: rgb(15, 41, 67);
   font-weight: 650;
 }
-#testimonials .t-bottom div .t-bg .c-left p {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left p {
   font-style: italic;
   font-family: "Roboto", sans-serif;
 }
-#testimonials .t-bottom div .t-bg .c-left .c-profile {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left .c-profile {
   gap: 1rem;
 }
-#testimonials .t-bottom div .t-bg .c-left .c-profile img {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left .c-profile img {
   width: 4rem;
   border-radius: 40px;
 }
-#testimonials .t-bottom div .t-bg .c-left .c-profile-text h6, #testimonials .t-bottom div .t-bg .c-left .c-profile-text .h6 {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left .c-profile .c-profile-text h6, #testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left .c-profile .c-profile-text .h6 {
   font-weight: 650;
   font-family: "Questrial", sans-serif;
 }
-#testimonials .t-bottom div .t-bg .c-left .c-profile-text span {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-left .c-profile .c-profile-text span {
   font-size: 14px;
   letter-spacing: 0;
   font-family: "Roboto", sans-serif;
 }
-#testimonials .t-bottom div .t-bg .c-right img {
+#testimonials .t-bottom .carousel-inner .carousel-item .t-bg .c-right img {
   width: 25rem;
   border-radius: 10px;
 }
+#testimonials .t-bottom .carousel-control {
+  padding-top: 1rem;
+}
+#testimonials .t-bottom .carousel-control button {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  border: 0.5px solid rgba(135, 135, 135, 0);
+  transition: 0.3s ease;
+}
+#testimonials .t-bottom .carousel-control button:hover {
+  background-color: rgb(232, 117, 50) !important;
+  color: white !important;
+}
 
+@media (max-width: 480px) {
+  .t-top p {
+    width: 90% !important;
+  }
+  .t-bottom .carousel-inner .carousel-item .t-bg {
+    flex-direction: column-reverse !important;
+  }
+  .t-bottom .carousel-inner .carousel-item .t-bg .c-right img {
+    width: 22rem !important;
+    border-radius: 10px;
+  }
+}
 #services .s-top {
   gap: 0.5rem;
 }
@@ -30744,6 +30801,11 @@ label {
   letter-spacing: 1px;
 }
 
+@media (max-width: 480px) {
+  .s-top p {
+    width: 90% !important;
+  }
+}
 #questions .q-top {
   gap: 0.5rem;
 }
@@ -30774,6 +30836,15 @@ label {
 }
 #questions .q-bottom div div .q-details {
   background-color: #fefbf8;
+}
+
+@media (max-width: 480px) {
+  .q-top p {
+    width: 90% !important;
+  }
+}
+#contact {
+  background-clip: rgb(250, 249, 251);
 }
 
 /*# sourceMappingURL=app.css.map */

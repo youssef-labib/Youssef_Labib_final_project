@@ -55,7 +55,7 @@
             margin-top: 20px;
 
             div {
-                display: none;
+                display: block;
 
                 .p-item {
                     display: flex;
@@ -109,10 +109,10 @@
     }
 }
 
-#sidebar:has(button[data-filter="web"]:focus) ~ .portfolio-container #all-items .item:not(.web),
-#sidebar:has(button[data-filter="graphics"]:focus) ~ .portfolio-container #all-items .item:not(.graphics),
-#sidebar:has(button[data-filter="motion"]:focus) ~ .portfolio-container #all-items .item:not(.motion),
-#sidebar:has(button[data-filter="branding"]:focus) ~ .portfolio-container #all-items .item:not(.branding) {
+#sidebar:has(button[data-filter="web"]:focus)~.portfolio-container #all-items .p-item:not(.web),
+#sidebar:has(button[data-filter="graphics"]:focus)~.portfolio-container #all-items .p-item:not(.graphics),
+#sidebar:has(button[data-filter="motion"]:focus)~.portfolio-container #all-items .p-item:not(.motion),
+#sidebar:has(button[data-filter="branding"]:focus)~.portfolio-container #all-items .p-item:not(.branding) {
     display: none;
 }
 
@@ -122,17 +122,24 @@
             width: 90% !important;
         }
     }
+
     .p-bottom {
+        .portfolio-menu {
+            flex-direction: column !important;
+        }
         .portfolio-container {
+            padding: 0 1rem;
             .p-all-items {
                 display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
                 flex-direction: column !important;
+
                 .p-item {
                     img {
-                        width: 30rem !important;
+                        width: 100% !important;
                     }
+
                     .p-card-text {
                         padding: 1rem;
 

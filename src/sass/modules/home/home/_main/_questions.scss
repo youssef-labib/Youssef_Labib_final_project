@@ -42,3 +42,10 @@
     }
 }
 
+@media (max-width: 480px) {
+    .q-top {
+        p {
+            width: 90% !important;
+        }
+    }
+}

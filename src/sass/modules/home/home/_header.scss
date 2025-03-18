@@ -14,6 +14,7 @@
         height: 85%;
         box-shadow: $box-shadow;
         gap: 14.5rem;
+        width: 100% !important;
 
         .f-main-logo {
             font-size: 26px;
@@ -35,7 +36,7 @@
                 color: $beta !important;
             }
 
-            .h-active {
+            .orange-hover:focus {
                 color: $beta !important;
             }
         }
