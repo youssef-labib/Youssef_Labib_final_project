@@ -22,7 +22,7 @@
 
     .p-bottom {
         .portfolio-menu {
-            gap: 0.5rem;
+            gap: 1rem;
 
             .p-hover {
                 text-decoration: none;
@@ -31,7 +31,8 @@
                 border-radius: $rounded;
                 color: $alpha;
                 transition: 0.3s;
-                font-family: "Roboto" , sans-serif;
+                font-family: "Roboto", sans-serif;
+                border: none;
             }
 
             .p-hover:hover {
@@ -39,7 +40,7 @@
                 color: $beta;
             }
 
-            .p-active {
+            .p-hover:focus {
                 color: $alpha;
                 background-color: $beta;
             }
@@ -52,6 +53,7 @@
             justify-content: center;
             gap: 15px;
             margin-top: 20px;
+
             div {
                 display: none;
 
@@ -76,20 +78,23 @@
                         justify-content: center;
                         flex-direction: column;
                         padding: 1.5rem;
+
                         h6 {
                             color: $beta;
-                            font-family: "Roboto" , sans-serif;
+                            font-family: "Roboto", sans-serif;
                             font-weight: 600;
                         }
+
                         h4 {
                             color: $alpha;
-                            font-family: "Questrial" , sans-serif;
+                            font-family: "Questrial", sans-serif;
                             font-weight: 600;
                         }
+
                         p {
                             font-size: 14px;
                             color: $neutral;
-                            font-family: "Roboto" , sans-serif;
+                            font-family: "Roboto", sans-serif;
                         }
                     }
                 }
@@ -101,17 +106,12 @@
                 gap: 2rem;
             }
         }
-
-        // #all:target~.portfolio-container #all-items,
-        // #web:target~.portfolio-container #web-items,
-        // #graphics:target~.portfolio-container #graphics-items,
-        // #motion:target~.portfolio-container #motion-items,
-        // #branding:target~.portfolio-container #branding-items {
-        //     display: flex;
-        // }
     }
 }
 
-
-
-
+#sidebar:has(button[data-filter="web"]:focus) ~ .portfolio-container #all-items .item:not(.web),
+#sidebar:has(button[data-filter="graphics"]:focus) ~ .portfolio-container #all-items .item:not(.graphics),
+#sidebar:has(button[data-filter="motion"]:focus) ~ .portfolio-container #all-items .item:not(.motion),
+#sidebar:has(button[data-filter="branding"]:focus) ~ .portfolio-container #all-items .item:not(.branding) {
+    display: none;
+}

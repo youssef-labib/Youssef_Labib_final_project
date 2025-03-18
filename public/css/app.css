@@ -30567,7 +30567,7 @@ label {
   letter-spacing: 1px;
 }
 #portfolio .p-bottom .portfolio-menu {
-  gap: 0.5rem;
+  gap: 1rem;
 }
 #portfolio .p-bottom .portfolio-menu .p-hover {
   text-decoration: none;
@@ -30577,12 +30577,13 @@ label {
   color: rgb(15, 41, 67);
   transition: 0.3s;
   font-family: "Roboto", sans-serif;
+  border: none;
 }
 #portfolio .p-bottom .portfolio-menu .p-hover:hover {
   background-color: #fcebe0;
   color: rgb(232, 117, 50);
 }
-#portfolio .p-bottom .portfolio-menu .p-active {
+#portfolio .p-bottom .portfolio-menu .p-hover:focus {
   color: rgb(15, 41, 67);
   background-color: rgb(232, 117, 50);
 }
@@ -30636,6 +30637,13 @@ label {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 2rem;
+}
+
+#sidebar:has(button[data-filter=web]:focus) ~ .portfolio-container #all-items .item:not(.web),
+#sidebar:has(button[data-filter=graphics]:focus) ~ .portfolio-container #all-items .item:not(.graphics),
+#sidebar:has(button[data-filter=motion]:focus) ~ .portfolio-container #all-items .item:not(.motion),
+#sidebar:has(button[data-filter=branding]:focus) ~ .portfolio-container #all-items .item:not(.branding) {
+  display: none;
 }
 
 #testimonials {
