@@ -30779,7 +30779,7 @@ label {
     flex-direction: column-reverse !important;
   }
   .t-bottom .carousel-inner .carousel-item .t-bg .c-right img {
-    width: 22rem !important;
+    width: 100% !important;
     border-radius: 10px;
   }
 }
@@ -30844,7 +30844,105 @@ label {
   }
 }
 #contact {
-  background-clip: rgb(250, 249, 251);
+  background-color: rgb(250, 249, 251);
+}
+#contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  gap: 5rem;
+}
+#contact .container .c-left {
+  display: flex;
+  align-items: left;
+  justify-content: start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45%;
+}
+#contact .container .c-left h6, #contact .container .c-left .h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#contact .container .c-left h1, #contact .container .c-left .h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: rgb(15, 41, 67);
+  font-family: "Questrial", sans-serif;
+}
+#contact .container .c-left p {
+  color: rgb(108, 111, 114);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+#contact .container .c-left .c-contacts .c-contact {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+#contact .container .c-left .c-contacts .c-contact i {
+  color: rgb(232, 117, 50);
+}
+#contact .container .c-left .c-contacts .c-contact p {
+  color: black;
+}
+#contact .container .c-left a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#contact .container .c-right {
+  background-color: white;
+  width: 50%;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#contact .container .c-right form div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#contact .container .c-right form div div input {
+  padding-block: 0.7rem;
+}
+#contact .container .c-right form div div input::placeholder {
+  padding: 0.5rem;
+  color: rgb(108, 111, 114);
+  font-family: "Roboto", sans-serif;
+}
+#contact .container .c-right form div div textarea::placeholder {
+  padding: 0.5rem;
+  color: rgb(108, 111, 114);
+  font-family: "Roboto", sans-serif;
+}
+#contact .container .c-right form div div button {
+  background-color: rgb(232, 117, 50);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 3rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column !important;
+    padding-bottom: 2rem !important;
+    gap: 0;
+  }
+  .container .c-left {
+    width: 100% !important;
+  }
+  .container .c-right {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
