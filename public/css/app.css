@@ -30197,28 +30197,6 @@ textarea.form-control-lg {
   letter-spacing: 1px;
 }
 
-#btt {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  max-width: 3rem;
-  border: none;
-  font-size: 26px;
-  padding: 0.3rem;
-  border-radius: 50%;
-  position: fixed;
-  background-color: rgb(232, 117, 50);
-  width: 100%;
-  transition: all 0.4s;
-}
-#btt i {
-  color: white;
-}
-
-#btt:hover {
-  opacity: 60%;
-}
-
 #header {
   background-color: white;
   height: 6rem;
@@ -30783,16 +30761,10 @@ label {
     border-radius: 10px;
   }
 }
-#services .s-top {
-  gap: 0.5rem;
-}
 #services .s-top h1, #services .s-top .h1 {
-  color: rgb(111, 75, 59);
   font-family: "Questrial", sans-serif;
-  font-weight: 600;
 }
 #services .s-top svg {
-  color: rgb(232, 117, 50);
   width: 12rem;
 }
 #services .s-top p {
@@ -30800,10 +30772,61 @@ label {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
 }
+#services .s-bottom .s-left {
+  width: 35%;
+}
+#services .s-bottom .s-left h1, #services .s-bottom .s-left .h1 {
+  font-family: "Questrial", sans-serif;
+}
+#services .s-bottom .s-left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 98%;
+}
+#services .s-bottom .s-left button {
+  width: 40%;
+  height: 3rem;
+  border: 0.5px rgb(232, 117, 50) solid;
+  font-family: "Roboto", sans-serif;
+}
+#services .s-bottom .s-left button:hover {
+  background-color: rgb(232, 117, 50) !important;
+  color: white !important;
+}
+#services .s-bottom .s-right {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 65%;
+}
+#services .s-bottom .s-right .s-box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#services .s-bottom .s-right .s-box h5, #services .s-bottom .s-right .s-box .h5 {
+  font-family: "Questrial", sans-serif;
+}
+#services .s-bottom .s-right .s-box h5:hover, #services .s-bottom .s-right .s-box .h5:hover {
+  color: rgb(232, 117, 50);
+}
+#services .s-bottom .s-right .s-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
 
 @media (max-width: 480px) {
   .s-top p {
     width: 90% !important;
+  }
+  .s-bottom {
+    flex-direction: column;
+  }
+  .s-bottom .s-left {
+    width: 100% !important;
+    padding-bottom: 2rem;
+  }
+  .s-bottom .s-right {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
   }
 }
 #questions .q-top {

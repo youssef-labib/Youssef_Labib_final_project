@@ -1,19 +1,61 @@
 #services {
     .s-top {
-        gap: 0.5rem;
         h1 {
-            color: $s-titles;
-            font-family: "Questrial" , sans-serif;
-            font-weight: 600;
+            font-family: "Questrial", sans-serif;
         }
+
         svg {
-            color: $beta;
             width: 12rem;
         }
+
         p {
             width: 40rem;
-            font-family: "Roboto" , sans-serif;
+            font-family: "Roboto", sans-serif;
             letter-spacing: 1px;
+        }
+    }
+    .s-bottom {
+        .s-left {
+            width: 35%;
+            
+            h1 {
+                font-family: "Questrial" , sans-serif;
+            }
+
+            p {
+                font-family: "Roboto" , sans-serif;
+                font-size: 16px;
+                width: 98%;
+            }
+            button {
+                width: 40%;
+                height: 3rem;
+                border: 0.5px $beta solid;
+                font-family: "Roboto" , sans-serif;
+                &:hover {
+                    background-color: $beta !important;
+                    color: white !important;
+                }
+            }
+        }
+        .s-right {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            width: 65%;
+            .s-box {
+                box-shadow: $box-shadow;
+                h5 {
+                    font-family: "Questrial" , sans-serif;
+                    &:hover {
+                        color: $beta;
+                    }
+                }
+                p {
+                    font-family: "Roboto" , sans-serif;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
@@ -22,6 +64,17 @@
     .s-top {
         p {
             width: 90% !important;
+        }
+    }
+    .s-bottom {
+        flex-direction: column;
+        .s-left {
+            width: 100% !important;
+            padding-bottom: 2rem;
+        }
+        .s-right {
+            width: 100% !important;
+            grid-template-columns: 1fr !important;
         }
     }
 }
