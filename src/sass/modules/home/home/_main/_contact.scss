@@ -1,7 +1,7 @@
 #contact {
     background-color: $s-bg;
 
-    .container {
+    .c-parent {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -102,7 +102,7 @@
 
 
 @media (max-width: 480px) {
-    .container {
+    .c-parent {
         flex-direction: column !important;
         padding-bottom: 2rem !important;
         gap: 0;

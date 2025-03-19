@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: "Roboto" , sans-serif;
+    padding-block: 2.5rem;
+    .fr-top {
+        span {
+            font-weight: 650;
+        }
+    }
+    .fr-socials {
+        color: $neutral;
+        display: flex;
+        gap: 0.5rem;
+        svg {
+            border: 0.1px $neutral solid;
+            border-radius: 50%;
+            padding: 8px;
+            
+            &:hover {
+                color: $beta;
+                border: 0.1px $beta solid !important;
+            }
+        }
+    }
+    .fr-bottom {
+        a {
+            text-decoration: none;
+            color: $beta;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #contact {
+        width: 100%;
+    }
+}
