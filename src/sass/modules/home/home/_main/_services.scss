@@ -11,7 +11,6 @@
         p {
             width: 40rem;
             font-family: "Roboto", sans-serif;
-            letter-spacing: 1px;
         }
     }
     .s-bottom {
@@ -30,7 +29,7 @@
             button {
                 width: 40%;
                 height: 3rem;
-                border: 0.5px $beta solid;
+                border: $s-border;
                 font-family: "Roboto" , sans-serif;
                 &:hover {
                     background-color: $beta !important;
@@ -41,7 +40,6 @@
         .s-right {
             display: grid !important;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
             width: 65%;
             .s-box {
                 box-shadow: $box-shadow;

@@ -80,7 +80,8 @@ label {
                 position: fixed;
                 width: 90%;
                 right: -200%;
-                top: 3%;
+                height: 95vh;
+                top: 15%;
                 transition: 0.5s;
                 flex-direction: column;
                 justify-content: start !important;
@@ -88,6 +89,8 @@ label {
                 gap: 1rem !important;
                 padding: 5vw !important;
                 z-index: 66666 !important;
+                box-shadow: $s-box-shadow;
+                border-radius: $small;
 
                 label,
                 .f-close {

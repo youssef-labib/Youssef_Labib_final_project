@@ -17,7 +17,7 @@ footer {
         gap: 0.5rem;
         svg {
             border: 0.1px $neutral solid;
-            border-radius: 50%;
+            border-radius: $circle;
             padding: 8px;
             
             &:hover {

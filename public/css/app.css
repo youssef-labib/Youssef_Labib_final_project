@@ -30197,6 +30197,28 @@ textarea.form-control-lg {
   letter-spacing: 1px;
 }
 
+#btt {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  max-width: 48px;
+  border: none;
+  font-size: 26px;
+  padding: 6px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: rgb(232, 117, 50);
+  width: 100%;
+  transition: all 0.4s;
+}
+#btt i {
+  color: white;
+}
+
+#btt:hover {
+  opacity: 60%;
+}
+
 #header {
   background-color: white;
   height: 6rem;
@@ -30266,7 +30288,8 @@ label {
     position: fixed;
     width: 90%;
     right: -200%;
-    top: 3%;
+    height: 95vh;
+    top: 15%;
     transition: 0.5s;
     flex-direction: column;
     justify-content: start !important;
@@ -30274,6 +30297,8 @@ label {
     gap: 1rem !important;
     padding: 5vw !important;
     z-index: 66666 !important;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 600px 250px;
+    border-radius: 5px;
   }
   #header header nav label,
   #header header nav .f-close {
@@ -30337,7 +30362,7 @@ label {
 #home .h-left-side .h-buttons .h-tr-btn {
   background-color: transparent;
   color: rgb(232, 117, 50);
-  border: 1px rgb(232, 117, 50) solid;
+  border: 1px solid rgb(232, 117, 50);
   border-radius: 40px;
   width: 10rem;
   height: 3rem;
@@ -30569,6 +30594,7 @@ label {
 }
 #portfolio .p-bottom .portfolio-menu {
   gap: 1rem;
+  padding-bottom: 1.5rem;
 }
 #portfolio .p-bottom .portfolio-menu .p-hover {
   text-decoration: none;
@@ -30585,15 +30611,14 @@ label {
   color: rgb(232, 117, 50);
 }
 #portfolio .p-bottom .portfolio-menu .p-hover:focus {
-  color: rgb(15, 41, 67);
+  color: white;
   background-color: rgb(232, 117, 50);
 }
 #portfolio .p-bottom .portfolio-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 1rem;
 }
 #portfolio .p-bottom .portfolio-container div {
   display: block;
@@ -30652,7 +30677,7 @@ label {
     width: 90% !important;
   }
   .p-bottom .portfolio-menu {
-    flex-direction: column !important;
+    flex-wrap: wrap !important;
   }
   .p-bottom .portfolio-container {
     padding: 0 1rem;
@@ -30770,7 +30795,6 @@ label {
 #services .s-top p {
   width: 40rem;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 1px;
 }
 #services .s-bottom .s-left {
   width: 35%;
@@ -30786,7 +30810,7 @@ label {
 #services .s-bottom .s-left button {
   width: 40%;
   height: 3rem;
-  border: 0.5px rgb(232, 117, 50) solid;
+  border: 1px solid rgb(232, 117, 50);
   font-family: "Roboto", sans-serif;
 }
 #services .s-bottom .s-left button:hover {
@@ -30796,7 +30820,6 @@ label {
 #services .s-bottom .s-right {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
   width: 65%;
 }
 #services .s-bottom .s-right .s-box {
@@ -30980,6 +31003,7 @@ label {
   }
   .c-parent .c-right {
     width: 100% !important;
+    padding: 2rem !important;
   }
 }
 footer {

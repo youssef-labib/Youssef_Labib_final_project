@@ -23,6 +23,7 @@
     .p-bottom {
         .portfolio-menu {
             gap: 1rem;
+            padding-bottom: 1.5rem;
 
             .p-hover {
                 text-decoration: none;
@@ -41,7 +42,7 @@
             }
 
             .p-hover:focus {
-                color: $alpha;
+                color: white;
                 background-color: $beta;
             }
 
@@ -51,8 +52,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 1rem;
 
             div {
                 display: block;
@@ -125,7 +125,7 @@
 
     .p-bottom {
         .portfolio-menu {
-            flex-direction: column !important;
+            flex-wrap: wrap !important;
         }
         .portfolio-container {
             padding: 0 1rem;
