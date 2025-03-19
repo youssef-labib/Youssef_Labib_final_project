@@ -92,6 +92,11 @@
                             height: 3rem;
                             font-weight: 600;
                             font-family: "Roboto" , sans-serif;
+
+                            &:hover {
+                                opacity: 50%;
+                                transition: 0.3s ease;
+                            }
                         }
                     }
                 }

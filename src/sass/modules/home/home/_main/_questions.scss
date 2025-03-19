@@ -31,11 +31,22 @@
                     border: $border;
                     border-radius: 5px !important;
                     font-weight: 600;
+                    font-family: "Questrial" , sans-serif;
+                    color: $alpha;
+                    box-shadow: none;
+                    &:hover {
+                        color: $beta;
+                    }
+                    &:focus {
+                        background-color: #fefbf8;
+                        color: $beta;
+                    }
                 }
             }
             div {
                 .q-details {
                     background-color: #fefbf8;
+                    font-family: "Roboto" , sans-serif;
                 }
             }
         }

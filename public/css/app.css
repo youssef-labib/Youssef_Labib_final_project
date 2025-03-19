@@ -30833,9 +30833,20 @@ label {
   border: 0.5px solid rgba(135, 135, 135, 0);
   border-radius: 5px !important;
   font-weight: 600;
+  font-family: "Questrial", sans-serif;
+  color: rgb(15, 41, 67);
+  box-shadow: none;
+}
+#questions .q-bottom div h3 .q-summary:hover, #questions .q-bottom div .h3 .q-summary:hover {
+  color: rgb(232, 117, 50);
+}
+#questions .q-bottom div h3 .q-summary:focus, #questions .q-bottom div .h3 .q-summary:focus {
+  background-color: #fefbf8;
+  color: rgb(232, 117, 50);
 }
 #questions .q-bottom div div .q-details {
   background-color: #fefbf8;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 480px) {
@@ -30929,6 +30940,10 @@ label {
   height: 3rem;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
+}
+#contact .c-parent .c-right form div div button:hover {
+  opacity: 50%;
+  transition: 0.3s ease;
 }
 
 @media (max-width: 480px) {
